@@ -2,9 +2,9 @@
   "name": "rocketq",
   "version": "1.0.0",
   "description": "Projeto desenvolvido para gerenciar perguntas aninomas de usuarios direcionados ao dono da página. Porjeto desenvolvido na semana NLW",
-  "main": "index.js",
+  "main": "src/server.js",
   "scripts": {
-    "start": "node src/server.js"
+    "start": "nodemon ."
   },
   "keywords": [],
   "author": "Antony William",
