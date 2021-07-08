@@ -8,12 +8,12 @@ const initDb = {
         // o wait serve para impedir que o codigo continue lendo os dados antes de terminar de ler os dados.
         const db = await Database()
 
-        db.exec(`CREATE TABLE rooms (
+        await db.exec(`CREATE TABLE rooms (
             id INTEGER PRIMARY KEY,
             pass TEXT
         )`);
 
-        db.exec(`CREATE TABLE questions (
+        await db.exec(`CREATE TABLE questions (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             title TEXT,
             read INT,
